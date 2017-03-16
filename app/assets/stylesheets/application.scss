@@ -15,3 +15,14 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+h1 {
+  color: red;
+}
+
+.social-btn {
+  height: 100%;
+  width: 300px;
+  font-size: 22px;
+  border-radius: 5px;
+}
