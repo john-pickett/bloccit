@@ -2,7 +2,6 @@ require 'random_data'
 
  # Create Posts
  50.times do
-
    Post.create!(
 
      title:  RandomData.random_sentence,
@@ -20,6 +19,9 @@ require 'random_data'
      body: RandomData.random_paragraph
    )
  end
+
+ Post.find_or_create_by!(title: "I know kung fu!", body: "And I can see the matrix now.")
+ Comment.find_or_create_by(post: 101, body: "Whoa...")
 
  puts "Seed finished"
  puts "#{Post.count} posts created"
