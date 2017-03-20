@@ -50,7 +50,7 @@ class PostsController < ApplicationController
       redirect_to posts_path
     else
       flash.now[:alert] = "There was an error deleting the post."
-      redner :show
+      render :show
     end
   end
 
