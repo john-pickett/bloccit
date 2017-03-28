@@ -37,3 +37,5 @@ source 'https://rubygems.org'
  gem 'bootstrap-sass'
  # Encrypting User Passwords
  gem 'bcrypt'
+ # Hiding sensitive data
+ gem 'figaro', '1.0'
