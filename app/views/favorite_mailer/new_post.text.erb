@@ -1,0 +1,6 @@
+You've auto-subbed to "<%= @post.title %>"
+ <%= "=" * (@post.title.length + 12) %>
+
+ <%= @post.body %>
+
+ Visit post at: <%= topic_post_url(@post.topic, @post) %>
